@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E26EA2B285B8CDB002C3A21 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E26EA2A285B8CDB002C3A21 /* HomeViewController.swift */; };
 		4E38B43B2859D10B002595CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E38B43A2859D10B002595CA /* AppDelegate.swift */; };
 		4E38B43D2859D10B002595CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E38B43C2859D10B002595CA /* SceneDelegate.swift */; };
 		4E38B43F2859D10B002595CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E38B43E2859D10B002595CA /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E26EA2A285B8CDB002C3A21 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4E38B4372859D10B002595CA /* my_learn_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = my_learn_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E38B43A2859D10B002595CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E38B43C2859D10B002595CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E26EA24285B835D002C3A21 /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				4E26EA26285B8C9E002C3A21 /* Home */,
+				4E26EA25285B836E002C3A21 /* Initial */,
+			);
+			path = Src;
+			sourceTree = "<group>";
+		};
+		4E26EA25285B836E002C3A21 /* Initial */ = {
+			isa = PBXGroup;
+			children = (
+				4E38B44E2859D407002595CA /* View */,
+				4EEBCE5A285B015900FC99FE /* ViewModel */,
+				4EEBCE59285B014E00FC99FE /* Model */,
+			);
+			path = Initial;
+			sourceTree = "<group>";
+		};
+		4E26EA26285B8C9E002C3A21 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4E26EA29285B8CB7002C3A21 /* Model */,
+				4E26EA28285B8CAF002C3A21 /* ViewModel */,
+				4E26EA27285B8CA9002C3A21 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4E26EA27285B8CA9002C3A21 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4E26EA2A285B8CDB002C3A21 /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4E26EA28285B8CAF002C3A21 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4E26EA29285B8CB7002C3A21 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		4E38B42E2859D10B002595CA = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +109,7 @@
 		4E38B4392859D10B002595CA /* my_learn_app */ = {
 			isa = PBXGroup;
 			children = (
-				4EEBCE5A285B015900FC99FE /* ViewModel */,
-				4EEBCE59285B014E00FC99FE /* Model */,
-				4E38B44E2859D407002595CA /* View */,
+				4E26EA24285B835D002C3A21 /* Src */,
 				4E38B43A2859D10B002595CA /* AppDelegate.swift */,
 				4E38B43C2859D10B002595CA /* SceneDelegate.swift */,
 				4E38B43E2859D10B002595CA /* ViewController.swift */,
@@ -72,7 +123,7 @@
 		4E38B44E2859D407002595CA /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4EEBCE5B285B016500FC99FE /* InitialView */,
+				4E38B44F2859D433002595CA /* InitialViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -89,14 +140,6 @@
 			children = (
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		4EEBCE5B285B016500FC99FE /* InitialView */ = {
-			isa = PBXGroup;
-			children = (
-				4E38B44F2859D433002595CA /* InitialViewController.swift */,
-			);
-			path = InitialView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E26EA2B285B8CDB002C3A21 /* HomeViewController.swift in Sources */,
 				4E38B43F2859D10B002595CA /* ViewController.swift in Sources */,
 				4E38B43B2859D10B002595CA /* AppDelegate.swift in Sources */,
 				4E38B43D2859D10B002595CA /* SceneDelegate.swift in Sources */,

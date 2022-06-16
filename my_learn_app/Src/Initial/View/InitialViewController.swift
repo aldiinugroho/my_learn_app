@@ -14,26 +14,27 @@ class InitialViewController: UIViewController {
         setMainView()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        navigationController?.setNavigationBarHidden(false, animated: false)
-    }
-
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        navigationController?.setNavigationBarHidden(false, animated: false)
-    }
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+//        navigationController?.setNavigationBarHidden(false, animated: false)
+//    }
+//
+//    override func viewDidDisappear(_ animated: Bool) {
+//        super.viewDidDisappear(animated)
+//        navigationController?.setNavigationBarHidden(false, animated: false)
+//    }
     
     func setMainView() {
-        navigationbar()
+        navigationconfig()
         view.backgroundColor = #colorLiteral(red: 0.1098039216, green: 0.1411764706, blue: 0.231372549, alpha: 1)
     }
     
-    func navigationbar() {
+    func navigationconfig() {
         navigationItem.title = "InitialViewController"
+        navigationItem.hidesBackButton = true
         navigationController?.setNavigationBarHidden(false, animated: false)
+        navigationController?.viewControllers = [self];
     }
-    
     
 }
 

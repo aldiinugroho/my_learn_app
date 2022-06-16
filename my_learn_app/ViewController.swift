@@ -38,18 +38,18 @@ class ViewController: UIViewController {
             isLoading = false
             if isLoading == false {
                 loadingindicator.stopAnimating()
-                let newViewController = InitialViewController()
+                let newViewController = HomeViewController()
                 navigationController?.pushViewController(newViewController, animated: false)
             }
         }
     }
     
     func setMainView() {
-        navigationbar()
+        navigationconfig()
         view.backgroundColor = #colorLiteral(red: 0.1098039216, green: 0.1411764706, blue: 0.231372549, alpha: 1)
     }
     
-    func navigationbar() {
+    func navigationconfig() {
         navigationItem.title = "ViewController"
         navigationController?.setNavigationBarHidden(true, animated: false)
     }
